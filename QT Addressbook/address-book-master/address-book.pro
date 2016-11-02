@@ -30,7 +30,7 @@ HEADERS += src/addressbookcontroller.h \
            src/qterrordialog.h \
            src/sqlitedatasource.h \
            src/sqliteutils.h \
-    src/sqlite3.h
+           src/sqlite3.h
 SOURCES += src/addressbookcontroller.cpp \
            src/contact.cpp \
            src/dummydatasource.cpp \
