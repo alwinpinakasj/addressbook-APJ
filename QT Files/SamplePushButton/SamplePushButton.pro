@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = SamplePushButton
 
-QT = core gui
+#QT = core gui
 
 QT += widgets
 
