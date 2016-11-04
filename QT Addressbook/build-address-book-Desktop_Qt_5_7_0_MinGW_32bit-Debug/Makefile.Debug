@@ -277,8 +277,8 @@ src/tmp/moc_qtaddcontactdialog.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidge
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/bin/moc.exe
 	C:\Qt\Qt5.7.0\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.7.0/5.7/mingw53_32/mkspecs/win32-g++ -I"E:/gitapj/QT Addressbook/address-book-master" -I"E:/gitapj/QT Addressbook/address-book-master" -I"E:/gitapj/QT Addressbook/address-book-master/src" -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtANGLE -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtSql -IC:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore -I. -IC:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Qt5.7.0/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Qt5.7.0/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Qt5.7.0/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.7.0/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ..\address-book-master\src\qtaddcontactdialog.h -o src\tmp\moc_qtaddcontactdialog.cpp
 
-src/tmp/moc_qtaddressbookgui.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QMainWindow \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qmainwindow.h \
+src/tmp/moc_qtaddressbookgui.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h \
@@ -377,8 +377,8 @@ src/tmp/moc_qtaddressbookgui.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../address-book-master/src/addressbookcontroller.h \
 		../address-book-master/src/contact.h \
@@ -1038,8 +1038,8 @@ src/tmp/addressbookcontroller.o: ../address-book-master/src/addressbookcontrolle
 		../address-book-master/src/errorinfo.h \
 		../address-book-master/src/addressbookcontroller.h \
 		../address-book-master/src/qtaddressbookgui.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QMainWindow \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qmainwindow.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h \
@@ -1138,8 +1138,8 @@ src/tmp/addressbookcontroller.o: ../address-book-master/src/addressbookcontrolle
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../address-book-master/src/qtcontactlist.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QListWidget \
@@ -1568,13 +1568,13 @@ src/tmp/qtaddcontactdialog.o: ../address-book-master/src/qtaddcontactdialog.cpp 
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QHBoxLayout \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o src\tmp\qtaddcontactdialog.o ..\address-book-master\src\qtaddcontactdialog.cpp
 
 src/tmp/qtaddressbookgui.o: ../address-book-master/src/qtaddressbookgui.cpp C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qmainwindow.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h \
@@ -1674,7 +1674,7 @@ src/tmp/qtaddressbookgui.o: ../address-book-master/src/qtaddressbookgui.cpp C:/Q
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QHBoxLayout \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qboxlayout.h \
@@ -1689,8 +1689,6 @@ src/tmp/qtaddressbookgui.o: ../address-book-master/src/qtaddressbookgui.cpp C:/Q
 		../address-book-master/src/addressbookmodel.h \
 		../address-book-master/src/errorinfo.h \
 		../address-book-master/src/qtaddressbookgui.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QMainWindow \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/QPushButton \
 		../address-book-master/src/qtcontactlist.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QListWidget \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qlistwidget.h \
@@ -2219,7 +2217,7 @@ src/tmp/qteditcontactdialog.o: ../address-book-master/src/qteditcontactdialog.cp
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QVBoxLayout \
@@ -2333,7 +2331,7 @@ src/tmp/qterrordialog.o: ../address-book-master/src/qterrordialog.cpp ../address
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qgridlayout.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QHBoxLayout \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qtwidgets/qpushbutton.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QLabel \

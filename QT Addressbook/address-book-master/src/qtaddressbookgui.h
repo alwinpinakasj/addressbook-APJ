@@ -1,8 +1,8 @@
 #ifndef UI_MAINWINDOW
 #define UI_MAINWINDOW
 
-#include <Qtwidgets/QMainWindow>
-#include <Qtwidgets/QPushButton>
+#include <QMainWindow>
+#include <QPushButton>
 #include "addressbookcontroller.h"
 #include "addressbookmodel.h"
 #include "addressbookview.h"
