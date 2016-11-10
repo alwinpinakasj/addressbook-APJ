@@ -224,7 +224,7 @@ ErrorInfo SQLiteDataSource::updateContact(Contact::ContactId id, const Contact& 
     sqlite3_bind_text(updateStatement.get(), 3, c.address.c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_text(updateStatement.get(), 5, c.email.c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_text(updateStatement.get(), 6, c.city.c_str(), -1, SQLITE_STATIC);
-sqlite3_bind_int(updateStatement.get(),7, id);
+     sqlite3_bind_int(updateStatement.get(),7, id);
 
     //execute SQL statement & check results    int stepResult = sqlite3_step(updateStatement.get());
     
