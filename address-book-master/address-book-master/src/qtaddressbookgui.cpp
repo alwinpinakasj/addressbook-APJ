@@ -13,7 +13,7 @@
 #include "qtcontactlist.h"
 #include "qtcontactdetailview.h"
 #include "qteditcontactdialog.h"
-#include "qtsearchcontactdialog.h"
+
 #include "qterrordialog.h"
 #include "contact.h"
 
@@ -21,6 +21,7 @@ QtAddressBookGUI::QtAddressBookGUI(AddressBookController &controller, AddressBoo
     QWidget *parent, Qt::WindowFlags flags) : QMainWindow(parent, flags),
     appController(controller), dataSource(model)
 {
+
     createWidgets();
     setMinimumSize(640,480);
 }
@@ -38,20 +39,22 @@ void QtAddressBookGUI::updateView()
 void QtAddressBookGUI::createWidgets()
 {
     detailView = new QtContactDetailView(dataSource);
-
+    setStyleSheet("Background-color:cyan");
     list = new QtContactList(dataSource);
     list->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
 
     newContactButton = new QPushButton("New Contact");
     editContactButton = new QPushButton("Edit");
     deleteContactButton = new QPushButton("Delete");
-    searchButton =new QPushButton("Search");
+    searchContactButton =new QPushButton("Search");
+    searchContactField= new QLineEdit(" ");
 
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(newContactButton);
     buttonLayout->addWidget(editContactButton);
     buttonLayout->addWidget(deleteContactButton);
-     buttonLayout->addWidget(searchButton);
+    buttonLayout->addWidget(searchContactField);
+    buttonLayout->addWidget(searchContactButton);
 
     QVBoxLayout *rightSideLayout = new QVBoxLayout();
     rightSideLayout->addWidget(detailView);
@@ -76,7 +79,7 @@ void QtAddressBookGUI::createWidgets()
     connect(editContactButton, SIGNAL(clicked()),
             this, SLOT(editContact()));
 
-    connect(searchButton, SIGNAL(clicked()),
+    connect(searchContactButton, SIGNAL(clicked()),
             this, SLOT(searchContact()));
 
 
@@ -183,53 +186,6 @@ void QtAddressBookGUI::editContact()
 }
 
 
-void QtAddressBookGUI::searchContact()
-{
-    Contact::ContactId idToEdit = list->getSelectedContactId();
-
-    Contact editingContact;
-    ErrorInfo getContactErrorStatus = dataSource.getContact(idToEdit, editingContact);
-
-    QtErrorDialog *errDialog = new QtErrorDialog("", this);
-
-    if(getContactErrorStatus.code != ERR_OK)
-    {
-        //The id of the Contact user wants to edit doesn't exist
-        //Should never happen since they are selecting it from a list
-        //of existing id
-        //display error dialog
-        errDialog->setText(getContactErrorStatus.msg.c_str());
-        errDialog->exec();
-
-        //Qt only automagically deletes child objects when parent is destroyed
-        //If I don't delete this here more and more dialogs will build up everytime
-        //this function is called, only being destroyed when the parent window
-        //(i.e. the application) is terminated.
-        delete errDialog;
-        return;
-    }
-
-    QtSearchContactDialog *editDialog = new QtSearchContactDialog(editingContact, this);
-
-    while(editDialog->exec())
-    {
-        ErrorInfo editErrorStatus = appController.editContact(idToEdit, editingContact);
-
-        if(editErrorStatus.code == ERR_OK)
-        {
-            break;
-        }
-
-        //display error dialog
-        errDialog->setText(editErrorStatus.msg.c_str());
-        errDialog->exec();
-    }
-
-    //see comment above about manually deleting dialogs after each run
-    delete errDialog;
-    delete editDialog;
-}
-
 void QtAddressBookGUI::deleteContact()
 {
     Contact::ContactId idToDelete = list->getSelectedContactId();
@@ -260,5 +216,17 @@ void QtAddressBookGUI::deleteContact()
         delete errDialog;
         return;
     }
+
+
 }
 
+
+
+void QtAddressBookGUI::searchContact()
+{
+    std::string nameToSearch = searchContactField->text().toStdString();
+
+   Contact::ContactId idOfSearchedItem = list->searchList(nameToSearch);
+   detailView->clear();
+   detailView->displayContact(idOfSearchedItem);
+}

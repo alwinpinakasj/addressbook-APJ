@@ -10,7 +10,7 @@ QtSearchForm::QtSearchForm(QWidget *parent) :
         QFormLayout(parent), firstNameField(new QLineEdit())
 
 {
-    addRow("First Name", firstNameField);
+         addRow("First Name", firstNameField);
 
 }
 

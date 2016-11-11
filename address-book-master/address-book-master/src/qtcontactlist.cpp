@@ -5,6 +5,7 @@
 #include "qtcontactlist.h"
 
 #include <string>
+#include <QMessageBox>
 
 
 /*
@@ -89,4 +90,34 @@ Contact::ContactId QtContactList::getSelectedContactId()
     }
     
     return selectedContactId;
+}
+
+Contact::ContactId QtContactList::searchList(std::string name)
+{
+    QMessageBox errormessage;
+    std::string nameofSearching = name;
+    std::int8_t f;
+    Contact::ContactRecordSet allContacts;
+    dataSource.getAllContacts(allContacts);
+
+    Contact::ContactRecordSet::const_iterator contactrecordsetIterator;
+    for(contactrecordsetIterator = allContacts.begin();contactrecordsetIterator!=allContacts.end();contactrecordsetIterator++)
+    {
+        std::string ListItemfirstName = contactrecordsetIterator->firstName.c_str();
+        if(nameofSearching==ListItemfirstName)
+        {
+            Contact::ContactId searchcontactid = contactrecordsetIterator->id;
+            f=1;
+            return searchcontactid;
+
+        }
+
+    }
+    if(f!=1)
+    {
+            errormessage.setText("No Such Contact");
+            errormessage.exec();
+
+    }
+
 }
