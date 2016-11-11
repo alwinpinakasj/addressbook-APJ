@@ -4,19 +4,19 @@
 #include <QMainWindow>
 
 namespace Ui {
-class addressbook;
+class AddressBook;
 }
 
-class addressbook : public QMainWindow
+class AddressBook : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit addressbook(QWidget *parent = 0);
-    ~addressbook();
+    explicit AddressBook(QWidget *parent = 0);
+    ~AddressBook();
 
 private:
-    Ui::addressbook *ui;
+    Ui::AddressBook *ui;
 };
 
 #endif // ADDRESSBOOK_H

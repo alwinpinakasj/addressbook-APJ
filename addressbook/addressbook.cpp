@@ -1,14 +1,14 @@
 #include "addressbook.h"
 #include "ui_addressbook.h"
 
-addressbook::addressbook(QWidget *parent) :
+AddressBook::AddressBook(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::addressbook)
+    ui(new Ui::AddressBook)
 {
     ui->setupUi(this);
 }
 
-addressbook::~addressbook()
+AddressBook::~AddressBook()
 {
     delete ui;
 }

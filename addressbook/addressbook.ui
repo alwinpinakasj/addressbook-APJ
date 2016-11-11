@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>addressbook</class>
- <widget class="QMainWindow" name="addressbook">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>400</width>
-    <height>281</height>
-   </rect>
-  </property>
+ <class>AddressBook</class>
+ <widget class="QMainWindow" name="AddressBook">
   <property name="windowTitle">
-   <string>addressbook</string>
+   <string>AddressBook</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>191</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>47</width>
-      <height>13</height>
+      <x>200</x>
+      <y>10</y>
+      <width>61</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Name</string>
+     <string>First Name</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>20</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>60</y>
+      <x>280</x>
+      <y>10</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -50,31 +42,123 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>60</y>
+      <x>200</x>
+      <y>50</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Last Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>47</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>90</y>
+      <width>111</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Phone Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>180</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
       <width>47</width>
       <height>13</height>
      </rect>
     </property>
     <property name="text">
-     <string>Age</string>
+     <string>email</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
+   <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>10</y>
-      <width>171</width>
-      <height>171</height>
+      <x>200</x>
+      <y>250</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>City</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>250</y>
+      <width>113</width>
+      <height>20</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>190</y>
+      <x>200</x>
+      <y>280</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -86,9 +170,9 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>190</y>
-      <width>61</width>
+      <x>280</x>
+      <y>280</y>
+      <width>75</width>
       <height>23</height>
      </rect>
     </property>
@@ -99,9 +183,9 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>190</y>
-      <width>61</width>
+      <x>360</x>
+      <y>280</y>
+      <width>75</width>
       <height>23</height>
      </rect>
     </property>
@@ -109,21 +193,21 @@
      <string>Delete</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="lineEdit_6">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>190</y>
-      <width>81</width>
-      <height>20</height>
+      <x>200</x>
+      <y>310</y>
+      <width>151</width>
+      <height>21</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>190</y>
+      <x>350</x>
+      <y>310</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -138,7 +222,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>16</width>
      <height>21</height>
     </rect>
    </property>
